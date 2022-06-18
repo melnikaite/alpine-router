@@ -1,0 +1,7 @@
+<h3>Items</h3>
+<ul x-data="page1Route()" x-init="getItems()">
+    <template x-for="item in items" :key="item">
+        <li x-text="item"></li>
+    </template>
+</ul>
+<a href="#page2">page2</a>
