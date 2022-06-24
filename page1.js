@@ -1,9 +1,9 @@
 window.page1Route = () => {
     return {
         items: [],
-        getItems: function () {
+        getItems: async function () {
             const loader = this.$store.app.getLoader();
-            this.items = loader.load();
+            this.items = await loader.load();
         },
     };
 };

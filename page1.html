@@ -1,5 +1,5 @@
 <h3>Items</h3>
-<ul x-data="page1Route()" x-init="getItems()">
+<ul x-data="page1Route()" x-init="await getItems()">
     <template x-for="item in items" :key="item">
         <li x-text="item"></li>
     </template>
